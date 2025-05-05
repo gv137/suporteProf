@@ -8,6 +8,7 @@ body {
     color: #333;
 }
 
+
 .container {
     max-width: 600px;
     margin: 30px auto;
@@ -95,6 +96,7 @@ button[type="submit"]:hover {
     color: #721c24; /* Vermelho escuro */
     border: 1px solid #f5c6cb;
 }
+
 
 /* Responsividade */
 @media (max-width: 650px) {
