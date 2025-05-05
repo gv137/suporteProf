@@ -1,0 +1,110 @@
+/* Estilos Gerais */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3; /* Azul mais escuro para o título */
+    margin-bottom: 20px;
+}
+
+/* Estilos do Formulário */
+#chamado-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Para incluir padding e border na largura total */
+    font-size: 1rem;
+}
+
+.form-group select {
+    appearance: none; /* Remove estilo padrão do select */
+    background-color: #fff; /* Garante fundo branco */
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite redimensionamento vertical */
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Azul padrão Bootstrap */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+}
+
+/* Mensagem de Status */
+#mensagem-status {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#mensagem-status.sucesso {
+    background-color: #d4edda; /* Verde claro */
+    color: #155724; /* Verde escuro */
+    border: 1px solid #c3e6cb;
+}
+
+#mensagem-status.erro {
+    background-color: #f8d7da; /* Vermelho claro */
+    color: #721c24; /* Vermelho escuro */
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsividade */
+@media (max-width: 650px) {
+    .container {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Chamados - Suporte TI Escolar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registrar Novo Chamado</h1>
+        <form id="chamado-form">
+            <div class="form-group">
+                <label for="nome-professor">Nome do Professor:</label>
+                <input type="text" id="nome-professor" name="nome_professor" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sala">Sala:</label>
+                <input type="text" id="sala" name="sala" required>
+            </div>
+
+            <div class="form-group">
+                <label for="urgencia">Nível de Urgência:</label>
+                <select id="urgencia" name="urgencia" required>
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="Baixa">Baixa</option>
+                    <option value="Media">Média</option>
+                    <option value="Alta">Alta</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tipo-problema">Tipo de Problema (Análise Prévia):</label>
+                <select id="tipo-problema" name="tipo_problema" required>
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="Monitor">Monitor (Tela)</option>
+                    <option value="CPU">Computador (CPU)</option>
+                    <option value="BenQ">Projetor (BenQ)</option>
+                    <option value="Rede">Rede / Internet</option>
+                    <option value="Impressora">Impressora</option>
+                    <option value="Software">Software / Aplicativo</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição Detalhada do Problema:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Enviar Chamado</button>
+        </form>
+        <div id="mensagem-status"></div> <!-- Para exibir mensagens de sucesso/erro -->
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
