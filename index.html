@@ -8,12 +8,7 @@
 </head>
 <body>
 
-    
-
     <div class="container">
-        
-        <a href="https://script.google.com/macros/s/AKfycbzEdEfLrZdTRCbpq5aahiioRZ7BWyqOdsHovJKsjR6OHnH5JhI7yrFnx3E4CKn58XKMjQ/exec"><center><img src="img/sesi.png" width="200px" height="90px" alt=""></center></a>
-
         <h1>Registrar Novo Chamado</h1>
         <form id="chamado-form">
             <div class="form-group">
@@ -26,15 +21,6 @@
                 <input type="text" id="sala" name="sala" required>
             </div>
 
-            <div class="form-group">
-                <label for="urgencia">Nível de Urgência:</label>
-                <select id="urgencia" name="urgencia" required>
-                    <option value="" disabled selected>Selecione...</option>
-                    <option value="Baixa">Baixa</option>
-                    <option value="Media">Média</option>
-                    <option value="Alta">Alta</option>
-                </select>
-            </div>
 
             <div class="form-group">
                 <label for="tipo-problema">Tipo de Problema (Análise Prévia):</label>
@@ -58,11 +44,7 @@
             <button type="submit">Enviar Chamado</button>
         </form>
         <div id="mensagem-status"></div> <!-- Para exibir mensagens de sucesso/erro -->
-
     </div>
-
-    
-
 
     <script src="js/script.js"></script>
 </body>

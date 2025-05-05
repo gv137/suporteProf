@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // URL do Google Apps Script fornecida pelo usuário
     const scriptURL = "https://script.google.com/macros/s/AKfycbzEdEfLrZdTRCbpq5aahiioRZ7BWyqOdsHovJKsjR6OHnH5JhI7yrFnx3E4CKn58XKMjQ/exec";
 
-    
     form.addEventListener("submit", function(event) {
         event.preventDefault(); // Impede o envio padrão do formulário
         statusMessage.textContent = ""; // Limpa mensagens anteriores
@@ -13,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // --- Validação Simples --- 
         const nomeProfessor = document.getElementById("nome-professor").value.trim();
         const sala = document.getElementById("sala").value.trim();
-        const urgencia = document.getElementById("urgencia").value;
         const tipoProblema = document.getElementById("tipo-problema").value;
         const descricao = document.getElementById("descricao").value.trim();
 
@@ -23,10 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         if (!sala) {
             mostrarErro("Por favor, informe a sala.");
-            return;
-        }
-        if (!urgencia) {
-            mostrarErro("Por favor, selecione o nível de urgência.");
             return;
         }
         if (!tipoProblema) {
