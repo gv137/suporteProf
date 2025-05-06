@@ -97,6 +97,15 @@ button[type="submit"]:hover {
     border: 1px solid #f5c6cb;
 }
 
+#instrutor{
+    color: #5f5f5fc0;
+    cursor: pointer;
+}
+
+#instrutor:hover{
+    color: #333;
+}
+
 
 /* Responsividade */
 @media (max-width: 650px) {

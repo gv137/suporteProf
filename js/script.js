@@ -84,5 +84,16 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
 
+    document.getElementById("instrutor").addEventListener("click", function() {
+        const senhaCorreta = "1234"; // altere a senha conforme necessário
+        const senha = prompt("Digite a senha:");
+    
+        if (senha === senhaCorreta) {
+          window.location.href = "https://script.google.com/macros/s/AKfycbzEdEfLrZdTRCbpq5aahiioRZ7BWyqOdsHovJKsjR6OHnH5JhI7yrFnx3E4CKn58XKMjQ/exec"; // substitua pela URL desejada
+        } else {
+          alert("Senha incorreta!");
+        }
+      });
+
 });
 
