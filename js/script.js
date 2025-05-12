@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     document.getElementById("instrutor").addEventListener("click", function() {
-        const senhaCorreta = "1234"; // altere a senha conforme necessário
+        const senhaCorreta = "Tomcat"; // altere a senha conforme necessário
         const senha = prompt("Digite a senha:");
     
         if (senha === senhaCorreta) {
